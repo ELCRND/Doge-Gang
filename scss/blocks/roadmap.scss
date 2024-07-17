@@ -86,10 +86,9 @@
 }
 
 .swiper-slide {
-  max-width: 404px;
-  padding: 40px;
-  background-color: #e4bd82;
-  position: relative;
+  max-width: 406px;
+  padding: 1px;
+  background-image: linear-gradient(-55deg, #000, #fff);
 
   @media screen and (max-width: 1023px) {
     max-width: 100%;
@@ -99,7 +98,12 @@
       margin-bottom: 15px;
     }
   }
+}
 
+.slide__wrap {
+  background-color: #e4bd82;
+  padding: 40px;
+  position: relative;
   @media screen and (max-width: 768px) {
     padding: 25px;
     max-height: 190px;

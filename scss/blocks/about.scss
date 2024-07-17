@@ -20,8 +20,13 @@
 }
 
 .about__wrap {
-  padding: 164px 76px 70px 76px;
+  padding: 1px;
+  background-image: linear-gradient(-55deg, #000, #fff);
   position: relative;
+}
+
+.about__content {
+  padding: 164px 76px 70px 76px;
   background: #fadbac;
 
   @media screen and (max-width: 768px) {
@@ -91,7 +96,7 @@
 
 .about__img {
   position: absolute;
-  bottom: 0;
+  bottom: 1px;
   right: 38px;
 
   @media screen and (max-width: 1279px) {
