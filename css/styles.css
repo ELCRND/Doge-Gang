@@ -481,6 +481,7 @@ body {
 
 .roadmap {
   padding-top: 40px;
+  min-height: 775px;
 }
 
 .roadmap__container {
@@ -725,7 +726,7 @@ body {
 }
 
 .about {
-  padding-top: 370px;
+  padding-top: 170px;
   padding-bottom: 175px;
 }
 @media screen and (max-width: 1023px) {
