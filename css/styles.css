@@ -160,11 +160,17 @@ body {
 @media screen and (max-width: 1279px) {
   .navigation__list {
     gap: 14px;
+    align-items: self-end;
   }
 }
 .navigation__list li {
   line-height: 20px;
   position: relative;
+}
+@media screen and (max-width: 1279px) {
+  .navigation__list li {
+    line-height: 100%;
+  }
 }
 .navigation__list li svg {
   position: absolute;
@@ -177,6 +183,7 @@ body {
 @media screen and (max-width: 1279px) {
   .navigation__list li:nth-of-type(1) {
     font-size: 15px;
+    translate: 0 2px;
   }
 }
 .navigation__list li:nth-of-type(1) svg {
@@ -362,6 +369,11 @@ body {
 
 .buy {
   padding-top: 55px;
+}
+@media screen and (max-width: 1279px) {
+  .buy {
+    padding-top: 38px;
+  }
 }
 
 .buy__container {
@@ -704,6 +716,190 @@ body {
 @media screen and (max-width: 1023px) {
   .roadmap__bg {
     top: 20%;
+  }
+}
+
+.about {
+  padding-top: 370px;
+  padding-bottom: 175px;
+}
+@media screen and (max-width: 1023px) {
+  .about {
+    padding-top: 130px;
+    padding-bottom: 52px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about {
+    padding-top: 100px;
+  }
+}
+
+.about__container {
+  width: min(1654px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.about__wrap {
+  padding: 164px 76px 70px 76px;
+  position: relative;
+  background: #fadbac;
+}
+@media screen and (max-width: 768px) {
+  .about__wrap {
+    padding: 40px 20px;
+  }
+}
+
+.about__title {
+  margin-bottom: 55px;
+  padding-left: 86px;
+  font-size: 70px;
+}
+@media screen and (max-width: 768px) {
+  .about__title {
+    margin-bottom: 36px;
+    padding-left: 20px;
+    font-size: 20px;
+  }
+}
+
+.about__description {
+  max-width: 834px;
+  font-size: 40px;
+  text-wrap: balance;
+  position: relative;
+  z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  .about__description {
+    max-width: 305px;
+    font-size: 15px;
+  }
+}
+
+.about__btn {
+  width: 301px;
+  height: 94px;
+  margin-top: 120px;
+  margin-left: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: -40px -24px 0 #000;
+  position: relative;
+  z-index: 1;
+  font-size: 70px;
+  transition: all 50ms ease-in;
+}
+@media screen and (max-width: 768px) {
+  .about__btn {
+    width: 87px;
+    height: 29px;
+    margin-top: 76px;
+    margin-left: 57px;
+    box-shadow: -17px -7px 0 #000;
+    font-size: 20px;
+  }
+}
+.about__btn:active {
+  translate: -40px -24px;
+  box-shadow: none;
+}
+@media screen and (max-width: 768px) {
+  .about__btn:active {
+    translate: -17px -7px;
+    box-shadow: none;
+  }
+}
+
+.about__img {
+  position: absolute;
+  bottom: 0;
+  right: 38px;
+}
+@media screen and (max-width: 1279px) {
+  .about__img {
+    right: 0;
+  }
+}
+
+.footer {
+  padding-top: 47px;
+  padding-bottom: 47px;
+  background-color: #fff;
+}
+@media screen and (max-width: 1279px) {
+  .footer {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.footer__container {
+  width: min(1748px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 83px;
+  font-size: 70px;
+}
+@media screen and (max-width: 1440px) {
+  .footer__socials {
+    gap: 40px;
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .footer__socials {
+    gap: 11px;
+    font-size: 20px;
+  }
+}
+.footer__socials li {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.footer__socials li:hover a {
+  transition: color 200ms ease;
+  color: #ccc;
+}
+.footer__socials li:hover path {
+  transition: stroke 200ms ease;
+  stroke: #ccc;
+}
+.footer__socials li svg {
+  position: absolute;
+  left: 3px;
+  bottom: -5px;
+}
+
+.footer__description {
+  max-width: 624px;
+  font-size: 40px;
+}
+@media screen and (max-width: 1440px) {
+  .footer__description {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__description {
+    font-size: 10px;
   }
 }
 
