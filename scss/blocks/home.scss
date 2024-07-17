@@ -1,0 +1,104 @@
+.home {
+  min-height: 621px;
+  margin-top: 30px;
+  padding-top: 240px;
+  position: relative;
+  overflow: hidden;
+  background-image: repeating-linear-gradient(
+    #fff 0px,
+    #fff 77px,
+    #f3f3f3 80px
+  );
+
+  @media screen and (max-width: 1279px) {
+    min-height: 303px;
+    margin-top: 0;
+    padding-top: 125px;
+  }
+
+  &::before {
+    content: "";
+    width: calc(100% + 10px);
+    height: 283px;
+    background-image: url("../public/img/home/home_schedule_bg.png");
+    background-position: -10px 0;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+
+    @media screen and (max-width: 1279px) {
+      height: 63px;
+      background-position: center;
+      background-size: auto;
+      background-image: url("../public/img/home/home_schedule_bg_mobile.png");
+    }
+  }
+}
+
+.home__title {
+  margin-bottom: 125px;
+  text-transform: uppercase;
+  font-size: 70px;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+
+  @media screen and (max-width: 1279px) {
+    margin-bottom: 45px;
+    font-size: 20px;
+  }
+}
+
+.home__btn {
+  width: 301px;
+  height: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e0b471;
+  box-shadow: -43px -18px 0 #000;
+  font-size: 70px;
+  color: #fff;
+  position: relative;
+  z-index: 3;
+  transition: all 50ms ease-in;
+
+  @media screen and (max-width: 1279px) {
+    width: 87px;
+    height: 29px;
+    font-size: 20px;
+    box-shadow: -17px -7px 0 #000;
+  }
+
+  &:active {
+    translate: -43px -18px;
+    box-shadow: none;
+
+    @media screen and (max-width: 1279px) {
+      translate: -17px -7px;
+      box-shadow: none;
+    }
+  }
+}
+
+.home__img-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  @media screen and (max-width: 1279px) {
+    bottom: 1px;
+  }
+}
+.home__img-2 {
+  position: absolute;
+  bottom: 44px;
+  right: 0;
+
+  @media screen and (max-width: 1279px) {
+    bottom: 1px;
+  }
+}

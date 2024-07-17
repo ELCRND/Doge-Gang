@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doge Gang</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="header__navigation navigation">
+            <ol class="navigation__list">
+                <li>
+                    <a href="#about" class="navigation__link">ABOUT</a>
+                    <svg stroke-dasharray="0,314" width="100%" height="12" viewBox="0 0 130 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1 2.00009L8.1385 5.04054C20.9059 10.4785 35.2564 10.8923 48.3159 6.19902V6.19902C56.0086 3.43447 64.2206 2.41834 72.3551 3.22445L100.994 6.06246C110.521 7.00655 120.134 5.61208 129 2V2"
+                            stroke="black" stroke-width="4" />
+                    </svg>
+                </li>
+                <li>
+                    <a href="#" class="navigation__link">TOKEN COINS</a>
+                    <svg stroke-dasharray="0,314" width="100%" height="22" viewBox="0 0 140 22" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1 4.00001L38.1663 2.46737C42.655 2.28227 45.3155 7.42435 42.5715 10.9814V10.9814C39.8894 14.4581 42.3677 19.4999 46.7587 19.4999L63.9339 19.4999C68.3683 19.4999 72.5297 17.3584 75.1071 13.7501L76.7441 11.4582C80.8973 5.64376 87.9353 2.61601 95.0127 3.59898L112.49 6.02638C117.139 6.67202 121.856 6.63748 126.495 5.92386L139 4.00007"
+                            stroke="black" stroke-width="4" />
+                    </svg>
+                </li>
+                <li>
+                    <a href="#roadmap" class="navigation__link">DOGE GANG</a>
+                    <svg stroke-dasharray="0,314" width="100%" height="18" viewBox="0 0 181 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 4.5V4.5C10.6673 15.7674 26.1885 19.1574 38.7642 12.5297L46.3096 8.55307C51.3754 5.88324 56.9631 4.35184 62.6823 4.06589L97.9039 2.30481C101.915 2.10425 105.919 2.82236 109.61 4.40437L113.554 6.09475C118.566 8.24269 124.29 7.94993 129.057 5.30184V5.30184C132.882 3.17692 137.36 2.55068 141.621 3.54491L180 12.5"
+                            stroke="black" stroke-width="4" />
+                    </svg>
+                </li>
+                <li>
+                    <a href="#buy" class="navigation__link">HOW TO BUY</a>
+                    <svg stroke-dasharray="0,314" width="100%" height="12" viewBox="0 0 130 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1 2.00009L8.1385 5.04054C20.9059 10.4785 35.2564 10.8923 48.3159 6.19902V6.19902C56.0086 3.43447 64.2206 2.41834 72.3551 3.22445L100.994 6.06246C110.521 7.00655 120.134 5.61208 129 2V2"
+                            stroke="black" stroke-width="4" />
+                    </svg>
+                </li>
+            </ol>
+        </nav>
+    </header>
+
+
+    <!-- HOME -->
+    <section class="home">
+        <h1 class="home__title">THEY ARE THE SAME BUT HAVE MANY DIFFERENCES</h1>
+        <a href="#" class="home__btn">BUY TOKEN</a>
+        <div class="home__img-1">
+            <picture>
+                <source srcset="public/img/home/home_dog_1_mobile.png" media="(max-width:1279px)" width="148"
+                    height="162">
+                <img src="public/img/home/home_dog_1.png" alt="" width="565" height="588">
+            </picture>
+        </div>
+        <div class="home__img-2">
+            <picture>
+                <source srcset="public/img/home/home_dog_2_mobile.png" media="(max-width:1279px)" width="141"
+                    height="120">
+                <img src="public/img/home/home_dog_2.png" alt="" width="497" height="439">
+            </picture>
+        </div>
+    </section>
+
+
+    <!-- BUY -->
+    <section class="buy" id="buy">
+        <div class="buy__container">
+            <div class="buy__steps steps">
+
+                <div class="steps__item step">
+                    <div class="step__wrap">
+
+                        <h2 class="step__title">CREATE WALLET</h2>
+                        <p class="step__description">Set up a Solana wallet. We recommend using Phantom or Solflare,
+                            available for download from the app store or as Chrome extensions if you prefer using a
+                            desktop.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="steps__item step">
+                    <div class="step__wrap">
+
+                        <h2 class="step__title">GET SOME SOLANA</h2>
+                        <p class="step__description">Purchase $SOL and transfer it to your wallet. You can buy $SOL on
+                            exchanges like Binance, Kraken, or Coinbase, then send it to your Solana wallet address.</p>
+                    </div>
+                </div>
+
+                <div class="steps__item step">
+                    <div class="step__wrap">
+
+                        <h2 class="step__title">SWITCH SOL TO NONAME COIN</h2>
+                        <p class="step__description">Visit the [exchange | dexscreener link] and search for the contract
+                            $DOGEGANG. Swap your $SOL for $DOGEGANG. You'll see the $DOGEGANG token in your wallet.
+                            Finally,
+                            HODL!</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="buy__text">CA:</div>
+        </div>
+    </section>
+
+
+    <!-- ROADMAP -->
+    <section class="roadmap" id="roadmap">
+        <div class="roadmap__container">
+            <h2 class="roadmap__title">ROADMAP</h2>
+            <div class="swiper roadmap__swiper">
+                <div class="swiper__navigation">
+                    <button class="swiper-prev" aria-label="prev"></button>
+                    <button class="swiper-next" aria-label="next"></button>
+                </div>
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide slide">
+                        <h3 class="slide__date">07 2024</h3>
+                        <ul class="slide__schedule">
+                            <li class="complete">Website</li>
+                            <li class="complete">Contract</li>
+                            <li class="complete">AMA</li>
+                            <li class="complete">Twitter stilling</li>
+                        </ul>
+                        <div class="slide__img">
+                            <picture>
+                                <source srcset="public/img/roadmap/roadmap_img_1_mobile.png" media="(max-width:1279px)"
+                                    width="212" height="132">
+                                <img src="public/img/roadmap/roadmap_img_1.png" alt="" width="320" height="200">
+                            </picture>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <h3 class="slide__date">08 2024 P1</h3>
+                        <ul class="slide__schedule">
+                            <li class="complete">Meme contest</li>
+                            <li class="complete">Coin exhibition</li>
+                            <li>3000 holders</li>
+                            <li>Meme trending</li>
+                        </ul>
+                        <div class="slide__img">
+                            <picture>
+                                <source srcset="public/img/roadmap/roadmap_img_2_mobile.png" media="(max-width:1279px)"
+                                    width="138" height="138">
+                                <img src="public/img/roadmap/roadmap_img_2.png" alt="" width="180" height="180">
+                            </picture>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <h3 class="slide__date">09 2024 P2</h3>
+                        <ul class="slide__schedule">
+                            <li>Marketing</li>
+                            <li>1M intial M.cap</li>
+                            <li>30 000 holders</li>
+                            <li>50M intial M.cap</li>
+                        </ul>
+                        <div class="slide__img">
+                            <picture>
+                                <source srcset="public/img/roadmap/roadmap_img_3_mobile.png" media="(max-width:1279px)"
+                                    width="150" height="126">
+                                <img src="public/img/roadmap/roadmap_img_3.png" alt="" width="227" height="191">
+                            </picture>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <h3 class="slide__date">09 2024 P2</h3>
+                        <ul class="slide__schedule">
+                            <li>Marketing</li>
+                            <li>1M intial M.cap</li>
+                            <li>30 000 holders</li>
+                            <li>50M intial M.cap</li>
+                        </ul>
+                        <div class="slide__img">
+                            <picture>
+                                <source srcset="public/img/roadmap/roadmap_img_2_mobile.png" media="(max-width:1279px)"
+                                    width="150" height="126">
+                                <img src="public/img/roadmap/roadmap_img_3.png" alt="" width="227" height="191">
+                            </picture>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="roadmap__bg">
+                <svg stroke-dashoffset="314" width="1564" height="691" viewBox="0 0 1564 691" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-dashoffset="314"
+                        d="M1.99357 688.711L55.0125 618.844C60.5514 611.545 69.6395 607.86 78.6974 609.242L132.202 617.404C144 619.203 155.424 612.414 159.482 601.191L181.448 540.445C187.18 524.594 206.636 518.842 220.066 529.027L268.695 565.91C276.749 572.018 287.689 572.675 296.417 567.575L388.519 513.748C394.268 510.389 398.438 504.875 400.107 498.43L433.372 369.95C439.376 346.758 471.41 344.475 480.643 366.581L503.295 420.82C511.314 440.019 537.907 441.594 548.135 423.475L554.771 411.721C556.888 407.971 558 403.737 558 399.431L558 287L577.084 108.661C579.805 83.2367 614.424 77.8099 624.794 101.182L788.572 470.314C800.652 497.541 841.673 484.612 835.959 455.379L774.523 141.101C770.784 121.972 789.401 106.112 807.693 112.843L821.313 117.855C825.997 119.579 830.058 122.665 832.973 126.717L878.5 190L966.381 335.519C978.459 355.52 1008.93 349.494 1012.49 326.401L1030.24 211.194C1032.11 199 1042.61 190 1054.94 190L1075.45 190C1085.48 190 1094.54 183.999 1098.46 174.76L1105.39 158.422C1113.36 139.618 1139.66 138.671 1148.97 156.853V156.853C1154.21 167.103 1165.99 172.2 1177.05 169.014L1370.35 113.347C1375.64 111.825 1380.27 108.603 1383.54 104.179L1419.34 55.7233C1424.69 48.4785 1433.53 44.6732 1442.47 45.7622L1494.65 52.1176C1501.86 52.9955 1509.09 50.6964 1514.47 45.8183L1561.99 2.71065"
+                        stroke="#C0C0C0" stroke-width="5" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about"></section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer"></footer>
+
+    <script src="js/swiper.js" type="module"></script>
+</body>
+
+</html>

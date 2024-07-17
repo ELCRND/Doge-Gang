@@ -1,0 +1,103 @@
+.buy {
+  padding-top: 55px;
+}
+
+.buy__container {
+  width: min(1696px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 61px;
+  padding-right: 61px;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 1279px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.buy__steps {
+  margin-bottom: 76px;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 1279px) {
+    margin-top: 46px;
+    margin-bottom: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 95px;
+  }
+}
+
+.steps__item {
+  padding: 1px;
+  background-image: linear-gradient(-55deg, #000, #fff);
+  position: relative;
+
+  &::after {
+    content: url("../public/img/buy/buy_arrow.png");
+    position: absolute;
+    top: 50%;
+    right: 0;
+    translate: 140% -50%;
+
+    @media screen and (max-width: 1279px) {
+      top: auto;
+      right: auto;
+      bottom: 0;
+      left: 50%;
+      translate: -50% 90%;
+      rotate: 90deg;
+      scale: 0.7;
+    }
+  }
+
+  &:last-of-type {
+    &::after {
+      content: "";
+    }
+  }
+}
+
+.step__wrap {
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+
+  @media screen and (max-width: 1279px) {
+    padding: 28px 8px;
+  }
+}
+
+.step__title {
+  max-width: 230px;
+  margin-bottom: 46px;
+  font-size: 40px;
+
+  @media screen and (max-width: 1279px) {
+    font-size: 20px;
+  }
+}
+
+.step__description {
+  max-width: 320px;
+  font-size: 20px;
+
+  @media screen and (max-width: 1279px) {
+    font-size: 15px;
+  }
+}
+
+.buy__text {
+  padding-left: 394px;
+  font-size: 70px;
+
+  @media screen and (max-width: 1279px) {
+    padding-left: 43px;
+    font-size: 20px;
+  }
+}
